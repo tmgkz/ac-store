@@ -26,7 +26,7 @@ fn sum_single_number(i: &i32) -> i32 {
     if number.to_string().len() == 1 {
         return number;
     }
-    for _ in 1..number.to_string().len() + 1 {
+    for _ in 1..=number.to_string().len() {
         result.push(number % 10);
         number = number / 10;
     }
