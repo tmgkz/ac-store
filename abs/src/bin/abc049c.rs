@@ -3,12 +3,23 @@ use std::collections::VecDeque;
 
 fn main() {
     input! {
-        s: String,
+        mut s: String,
     }
     if s.len() <= 4 {
         println!("NO");
         return;
     }
+    // let a = s
+    //     .replace("eraser", "")
+    //     .replace("erase", "")
+    //     .replace("dreamer", "")
+    //     .replace("dream", "");
+    // if a == "" {
+    //     println!("YES")
+    // } else {
+    //     println!("NO")
+    // }
+
     let mut str: VecDeque<char> = s.chars().rev().collect();
     loop {
         if str.len() == 0 {
