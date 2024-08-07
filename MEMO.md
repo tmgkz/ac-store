@@ -10,3 +10,6 @@
 ### 提出
 - `cargo compete submit {問題名}`
     - テストケースの実行と同じ感じで
+### テストケース
+- `cargo compete download -overwrite`
+    - うまくテストケースのディレクトリがcommitされていなくてテストコマンド叩けないとき
